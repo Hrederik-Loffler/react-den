@@ -1,0 +1,85 @@
+/* Variable declarations */
+:root {
+    font-size: 14px;
+
+    /* Sizes */
+    --skip-navbar-height: 6rem;
+    --height-screen-skip-navbar: calc(100vh - var(--skip-navbar-height));
+
+    /* Font sizes */
+    --font-size-h2: 2rem;
+
+    /* Backgrounds */
+    --bg-form: #ffffff;
+
+    /* Border radius */
+    --border-radius: 0.5rem;
+}
+
+/* Tag overloads */
+h2 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 1.5rem;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/* Common classes */
+/* Containers */
+.content-container,
+.form-container {
+    padding: 0 2rem;
+    margin: auto;
+    width: 100%;
+}
+
+.content-container {
+    max-width: 1280px;
+}
+
+.form-container {
+    max-width: 560px;
+}
+
+/* List styles */
+.list-style-none {
+    list-style: none;
+}
+
+/* Margins/paddings */
+.return-to-navbar {
+    margin-top: calc(-1 * var(--skip-navbar-height) / 2);
+}
+
+/* Sizes */
+.h-100vh {
+    height: 100vh;
+}
+.w-100vw {
+    width: 100vw;
+}
+
+.min-h-100vh {
+    min-height: 100vh;
+    height: auto;
+}
+
+.skip-navbar-height {
+    padding-top: var(--skip-navbar-height);
+}
+.min-height-screen-skip-navbar {
+    min-height: var(--height-screen-skip-navbar);
+}
+
+/* Backgrounds */
+.bg-form {
+    background-color: var(--bg-form);
+}
+
+/* Border radius */
+.rounded {
+    border-radius: var(--border-radius) !important;
+}
